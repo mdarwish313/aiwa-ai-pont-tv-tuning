@@ -1,2 +1,3 @@
 *.apk
 .DS_Store
+docs/CHANGES-LOCAL.md

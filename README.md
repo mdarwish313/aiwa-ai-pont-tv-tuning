@@ -17,6 +17,10 @@ Every change is one small transaction:
 
 `check.sh` compares the TV with `config/` after any restart and lists anything that came back.
 
+## Guided setup with Claude Code
+
+Open this folder in [Claude Code](https://claude.com/claude-code) and type `/aiwa-tv-tuning`. Claude asks you one question at a time, from turning on debugging to the optional home-screen swap, and runs every change through the 5-minute rollback. The steps are in [.claude/skills/aiwa-tv-tuning/SKILL.md](.claude/skills/aiwa-tv-tuning/SKILL.md).
+
 ## Requirements
 
 - macOS (the timer uses launchd; the scripts themselves are plain `sh`).
