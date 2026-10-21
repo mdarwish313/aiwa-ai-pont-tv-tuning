@@ -1,0 +1,50 @@
+# Packages disabled with `pm disable-user --user 0` (reversible: `pm enable --user 0 <package>`).
+# Tested on one Aiwa AI PONT (board alimos, MediaTek mt5896, Google TV 14). Comment out anything you use.
+# check.sh compares the TV against this list.
+
+# Shipped disabled by the seller on the test set
+com.cltv.hybrid
+com.cltv.mal
+com.mediatek.opapp
+com.mediatek.dtv.tvinput.isdbtuner
+com.mediatek.dtv.tvinput.atsctuner
+
+# Vendor apps and promos
+com.homwee.store
+com.homwee.help
+com.homwee.multiscreenshare
+com.gdch.wwtv.mediaplayer
+com.mediatek.tv.oneworld.wizardkt
+com.mediatek.tv.launcher.partner
+
+# Google extras
+com.google.android.play.games
+com.google.android.feedback
+com.google.android.partnersetup
+com.google.android.syncadapters.calendar
+com.google.android.apps.tv.dreamx
+com.android.tv.feedbackconsent
+com.android.health.connect.backuprestore
+com.android.healthconnect.controller
+
+# Unused broadcast overlays (DVB/ATSC; the tuners above are off)
+com.gdch.tv.dvbtvinputserviceoverlay
+com.android.tv.inputplayer.overlay.cltv.dvb
+com.mediatek.tv.dvbtvinputserviceoverlay
+com.android.tv.inputplayer.overlay.atsc
+com.mediatek.tv.atsctisoverlay
+
+# Ad services (each tested alone; streaming apps still play)
+com.android.adservices.api
+com.android.ondevicepersonalization.services
+com.android.federatedcompute.services
+
+# Optional: only if you don't use voice search, text-to-speech or casting
+com.google.android.katniss
+com.google.android.tts
+com.google.android.apps.mediashell
+
+# Only together with a replacement launcher that holds the HOME role (see docs/FINDINGS.md).
+# Disabling these without one leaves Home on a blank setup screen.
+com.google.android.apps.tv.launcherx
+com.google.android.tungsten.setupwraith

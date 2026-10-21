@@ -1,0 +1,7 @@
+# Preinstalled apps removed for the main user with `pm uninstall -k --user 0 <package>`.
+# On this TV, merely disabling these did not stick: each restart turned them back on. Uninstalling for user 0 did.
+# Undo: `cmd package install-existing --user 0 <package>`. Remove lines for apps you use.
+com.netflix.ninja
+com.amazon.amazonvideo.livingroom
+com.google.android.youtube.tvmusic
+com.mediatek.tv.oneworld.tvcenter
